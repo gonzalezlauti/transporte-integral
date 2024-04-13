@@ -1,22 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>PRACTICAS HTMLL-CSS</title>
-</head>
-<body>
-    <div>
-        <h1>mi titulo</h1>
-    </div>
-    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident mollitia quas doloribus, rerum reprehenderit eius cum laudantium atque ipsa quod veritatis alias quisquam, recusandae ad eum inventore animi commodi fugit.</p>
-<section> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas, quos officia aut praesentium temporibus dolore iure ipsam sunt assumenda doloribus distinctio tenetur iste vero itaque voluptatum repellat rerum commodi!
-    <h3 id="color" class="subrayado">mi titulo</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident quisquam deleniti, libero cupiditate officia quae ad unde necessitatibus a nihil laborum veritatis, cum corporis! Vitae sequi similique molestiae cupiditate.
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transporte integral ADG</title>
+        <link rel="stylesheet" href="./assets/styles/styles.css">
+        <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/thumbnails/004/581/260/small/truck-delivery-icon-transportation-automotive-shipping-moving-and-freight-illustration-design-free-vector.jpg" type="image/x-icon">
+    </head>
+    <body>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel perferendis nisi, voluptatum possimus dignissimos maiores aliquam explicabo mollitia ut, tempore error tenetur velit deserunt quidem. Possimus harum dolorem voluptatum. Itaque?</p>
-</section>
-</body>
-
+        <header class="headerContenedor">
+            <div class="logoContenedor">
+                <h1>Transporte Integral ADG </h1> 
+                <h2>Tu transporte de confianza</h2>  
+            </div>
+            <nav class="navbarContenedor">
+                <ul class="navLista">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#flota">Flota</a>
+                    </li>
+                    <li>
+                        <a href="#trayectoria">Trayectoria</a>
+                    </li>
+                    <li>
+                        <a href="#garantias">Garantias</a>
+                    </li>
+                    <li>
+                        <a href="#contacto" >contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main> 
+            <section id="flota" class="flotaContenedor">
+                <article class="vehiculo">
+                    <div class="imagenContenedor">
+                        <img src="./assets/img/image.webp" alt="Mercedez Benz sprinter 313">        
+                    </div>
+                </article>
+                <article class="vehiculo">
+                    <div class="imagenContenedor">
+                        <img src="https://cdn.motor1.com/images/mgl/7qnGA/s1/4x3/mercedes-benz-nuevos-camiones-producidos-en-el-pais.webp" alt="">
+                    </div>
+                </article>
+                <article class="vehiculo">
+                    <div class="imagenContenedor">
+                        <img src="./assets/img/mercedez abierta.webp" alt="">
+                    </div>
+                </article>
+            </section>
+            <section id="trayectoria" class="trayectoriaContenedor">
+                <article>
+                    <h3>nuestra trayectoria</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo aspernatur tempore similique assumenda ducimus corrupti cumque ipsum? Doloribus libero totam officiis quibusdam nobis ducimus! Fugit quas vitae reiciendis fuga?
+                    </p>
+                </article>
+                <article>
+                    <h3>Nuestra historia</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae officia quo aperiam nihil excepturi odio aut rem possimus asperiores beatae facere quis amet, ducimus ratione aliquid fugiat suscipit perspiciatis maxime.
+                    </p>
+                </article>
+            </section>
+            <section id="garantias" class="garantiasContenedor">
+                <article>
+                    <h3>Seguro de carga</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quas? Incidunt odio sequi magnam asperiores ab eligendi, fugiat dolorum error dignissimos voluptates commodi cumque fuga et iure dicta cupiditate a!</p>
+                </article>
+            </section>
+            <section id="contacto" class="contactoContenedor">
+                <h3>Contacto</h3>
+                <form action="">
+                    <div>
+                        <label for="nombreApellido">Nombre y apellido</label>  
+                        <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Ingrese su nombre y apellido">                   
+                    </div>
+                    <div>
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su email">
+                    </div>
+                    <div>
+                        <label for="Telefono">Telefono</label>
+                        <input type="number" name="Telefono" id="Telefono" placeholder="ingrese su numero de Telefono">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="mensaje" cols="30" rows="10">Tu mensaje</textarea>
+                    </div>
+                    <button type="submit">Enviar consulta</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footerContenedor">
+            <div class="logoContenedor">
+                <h1>Transporte Integral ADG </h1> 
+                <h2>Tu transporte de confianza</h2>  
+            </div>
+            <nav class="navbarContenedor">
+                <ul class="navLista">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#flota">Flota</a>
+                    </li>
+                    <li>
+                        <a href="#trayectoria">Trayectoria</a>
+                    </li>
+                    <li>
+                        <a href="#garantias">Garantias</a>
+                    </li>
+                    <li>
+                        <a href="#contacto" >contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
 </html>
