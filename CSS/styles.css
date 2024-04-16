@@ -1,0 +1,132 @@
+/* Configuración base para todos los elementos */
+* {
+    box-sizing: border-box; /* Define el modelo de caja de borde para todos los elementos */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina los rellenos predeterminados */
+}
+
+/* Estilos para el contenedor principal del encabezado */
+.headerContenedor {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 40px; /* Espaciado interior */
+    position: relative; /* Permite el posicionamiento relativo de elementos internos */
+    overflow: hidden; /* Limpia los floats internos */
+    background-color: #E0E0E0; 
+}
+
+/* Estilos para el contenedor del logo */
+.logoContenedor {
+    float: left; /* Coloca el logo en el lado izquierdo */
+}
+
+/* Estilos para el contenedor de la barra de navegación */
+.navbarContenedor {
+    float: right; /* Coloca la barra de navegación en el lado derecho */
+    position: relative; /* Permite el posicionamiento relativo de elementos internos */
+}
+
+/* Estilos para la lista de navegación */
+.navLista {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 100%; /* Ocupa todo el alto disponible */
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 20px; /* Espaciado interior de los elementos de la lista */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.navLista li {
+    display: inline-block; /* Muestra los elementos de la lista en línea uno al lado del otro */
+}
+
+/* Estilos para los enlaces dentro de la lista de navegación */
+.navLista a {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: #424242; 
+}
+
+/* Estilos para el contenedor de la flota de vehículos */
+.flotaContenedor {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden; /* Limpia los floats internos */
+}
+
+/* Estilos para cada vehículo */
+.flotaContenedor .vehiculo {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    float: left; /* Para que queden uno junto al otro */
+    background-color: #F5F5F5; /* Color de fondo del vehículo */
+}
+
+/* Estilos para las imágenes de los vehículos */
+.flotaContenedor .vehiculo .imagenContenedor img {
+    width: 100%;
+    height: 500px; /* Altura fija para las imágenes de los vehículos */
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* Estilos para el contenedor de la sección de trayectorias */
+.trayectoriaContenedor {
+    background-color: #FFC107; 
+    padding: 20px; /* Espaciado interior */
+    margin: 10px; /* Margen exterior */
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilos para el contenedor de la sección de garantías */
+.garantiasContenedor {
+    background-color: #FF5722;
+    margin: 10px; /* Margen exterior */
+    padding: 20px; /* Espaciado interior */
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilos para el contenedor de la sección de contacto */
+.contactoContenedor {
+    background-color: #03A9F4; 
+    margin: 10px; /* Margen exterior */
+    padding: 20px; /* Espaciado interior */
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilos para los campos del formulario */
+.contactoContenedor input,
+.contactoContenedor textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Espaciado interior */
+    margin-bottom: 10px; /* Margen inferior */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: none; /* Sin sombra */
+    outline: none; /* Sin contorno al enfocar */
+}
+
+/* Estilos para el botón de enviar del formulario */
+.contactoContenedor button {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Espaciado interior */
+    background-color: #FFC107; 
+    color: #FFF; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: background-color 0.3s; /* Transición suave de color de fondo */
+}
+.footerContenedor {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 40px; /* Espaciado interior */
+    position: relative; /* Permite el posicionamiento relativo de elementos internos */
+    overflow: hidden; /* Limpia los floats internos */
+    background-color: #212121; 
+    color: #fff;
+}
+.footerContenedor .navLista a {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: #fff; 
+}
