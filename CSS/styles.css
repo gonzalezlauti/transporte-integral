@@ -1,132 +1,449 @@
-/* Configuración base para todos los elementos */
-* {
-    box-sizing: border-box; /* Define el modelo de caja de borde para todos los elementos */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 0; /* Elimina los rellenos predeterminados */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body {
+  height: 100%;
+  background-color: var(--clr-neutral-0);
+}
+html *, body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html h1, html h2, html h3, html h4, html h5, html h6, html p, html span, html blockquote, html label, html input, html textarea, html button, html a, body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body blockquote, body label, body input, body textarea, body button, body a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+html a, body a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+html a:hover, body a:hover {
+  color: #2196F3;
+}
+html ul, body ul {
+  list-style: none;
+}
+html h1, body h1 {
+  font-size: 28px;
+}
+html h2, body h2 {
+  font-size: 24px;
+}
+html h3, body h3 {
+  font-size: 20px;
+}
+html h4, body h4 {
+  font-size: 18px;
+}
+html h5, body h5 {
+  font-size: 16px;
+}
+html h6, body h6 {
+  font-size: 14px;
+}
+html img, body img {
+  width: 100%;
+  height: 100%;
 }
 
-/* Estilos para el contenedor principal del encabezado */
 .headerContenedor {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 40px; /* Espaciado interior */
-    position: relative; /* Permite el posicionamiento relativo de elementos internos */
-    overflow: hidden; /* Limpia los floats internos */
-    background-color: #E0E0E0; 
+  width: 100%;
+  position: fixed;
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+}
+.headerContenedor .logoContenedor {
+  display: flex;
+}
+.headerContenedor .logoContenedor .logoTitulo {
+  font-size: 18px;
+  user-select: none;
+}
+.headerContenedor .navbarContenedor .navLista {
+  display: flex;
+  gap: 1rem;
+}
+.headerContenedor .navbarContenedor .navLista li a {
+  color: #111;
+}
+.headerContenedor .navbarContenedor .navLista li a:hover {
+  color: #2196F3;
 }
 
-/* Estilos para el contenedor del logo */
-.logoContenedor {
-    float: left; /* Coloca el logo en el lado izquierdo */
+#principal .hero, #principal .faqsHero, #principal .hero-extended {
+  width: 100%;
+  height: 100%;
+  padding-block-start: 3.3rem;
+  position: relative;
+  overflow: hidden;
+}
+#principal .hero .contenedor, #principal .faqsHero .contenedor, #principal .hero-extended .contenedor {
+  background-image: url("https://www.catamarcactual.com.ar/u/fotografias/fotosnoticias/2024/2/16/284699.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#principal .hero .contenedor .contenido, #principal .faqsHero .contenedor .contenido, #principal .hero-extended .contenedor .contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+#principal .hero .contenedor .contenido .titulo, #principal .faqsHero .contenedor .contenido .titulo, #principal .hero-extended .contenedor .contenido .titulo {
+  color: #fff;
+  font-size: 28px;
+}
+#principal .hero .contenedor .contenido .subtitulo, #principal .faqsHero .contenedor .contenido .subtitulo, #principal .hero-extended .contenedor .contenido .subtitulo {
+  font-size: 24px;
+}
+#principal .hero .contenedor .contenido .button, #principal .faqsHero .contenedor .contenido .button, #principal .hero-extended .contenedor .contenido .button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0.7rem;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+#principal .hero .contenedor .contenido .button:hover, #principal .faqsHero .contenedor .contenido .button:hover, #principal .hero-extended .contenedor .contenido .button:hover {
+  color: #2196F3;
+  background-color: #fff;
+}
+#principal .hero .contenedor::after, #principal .faqsHero .contenedor::after, #principal .hero-extended .contenedor::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.7;
+  z-index: 1;
 }
 
-/* Estilos para el contenedor de la barra de navegación */
-.navbarContenedor {
-    float: right; /* Coloca la barra de navegación en el lado derecho */
-    position: relative; /* Permite el posicionamiento relativo de elementos internos */
+.serviciosContenedor, .testimonialesContenedor, #principal .trayectoriaContenedor {
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.serviciosContenedor h3, .testimonialesContenedor h3, #principal .trayectoriaContenedor h3 {
+  font-size: 28px !important;
+}
+.serviciosContenedor .servicios, .testimonialesContenedor .servicios, .testimonialesContenedor .testimoniales, #principal .trayectoriaContenedor .servicios, #principal .trayectoriaContenedor .testimonialesContenedor .testimoniales, .testimonialesContenedor #principal .trayectoriaContenedor .testimoniales, #principal .trayectoriaContenedor .trayectorias {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-block-start: 2rem;
+  gap: 2rem;
+  user-select: none;
+}
+.serviciosContenedor .servicios .servicio, .testimonialesContenedor .servicios .servicio, .testimonialesContenedor .testimoniales .servicio, .testimonialesContenedor .testimoniales .testimonio, #principal .trayectoriaContenedor .servicios .servicio, .testimonialesContenedor .testimoniales #principal .trayectoriaContenedor .servicios .testimonio, #principal .trayectoriaContenedor .testimonialesContenedor .testimoniales .servicio, #principal .trayectoriaContenedor .testimonialesContenedor .testimoniales .testimonio, .testimonialesContenedor #principal .trayectoriaContenedor .testimoniales .servicio, .testimonialesContenedor #principal .trayectoriaContenedor .testimoniales .testimonio, #principal .trayectoriaContenedor .trayectorias .servicio, .testimonialesContenedor .testimoniales #principal .trayectoriaContenedor .trayectorias .testimonio, #principal .trayectoriaContenedor .trayectorias .itemTrayectoria {
+  width: 20rem;
+  height: 8rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombras */
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  backdrop-filter: blur(5px); /* Aplicar un desenfoque de 5px al fondo al hacer hover */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+.serviciosContenedor .servicios .servicio:hover, .testimonialesContenedor .servicios .servicio:hover, .testimonialesContenedor .testimoniales .servicio:hover, .testimonialesContenedor .testimoniales .testimonio:hover, #principal .trayectoriaContenedor .servicios .servicio:hover, .testimonialesContenedor .testimoniales #principal .trayectoriaContenedor .servicios .testimonio:hover, #principal .trayectoriaContenedor .testimonialesContenedor .testimoniales .servicio:hover, #principal .trayectoriaContenedor .testimonialesContenedor .testimoniales .testimonio:hover, .testimonialesContenedor #principal .trayectoriaContenedor .testimoniales .servicio:hover, .testimonialesContenedor #principal .trayectoriaContenedor .testimoniales .testimonio:hover, #principal .trayectoriaContenedor .trayectorias .servicio:hover, .testimonialesContenedor .testimoniales #principal .trayectoriaContenedor .trayectorias .testimonio:hover, #principal .trayectoriaContenedor .trayectorias .itemTrayectoria:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombras */
+  background-color: #2196F3;
+  color: #fff;
 }
 
-/* Estilos para la lista de navegación */
-.navLista {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: 100%; /* Ocupa todo el alto disponible */
-    list-style: none; /* Elimina los estilos de lista predeterminados */
-    padding: 20px; /* Espaciado interior de los elementos de la lista */
-}
-
-/* Estilos para los elementos de la lista de navegación */
-.navLista li {
-    display: inline-block; /* Muestra los elementos de la lista en línea uno al lado del otro */
-}
-
-/* Estilos para los enlaces dentro de la lista de navegación */
-.navLista a {
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-    color: #424242; 
-}
-
-/* Estilos para el contenedor de la flota de vehículos */
-.flotaContenedor {
-    width: 100%;
-    padding: 20px;
-    overflow: hidden; /* Limpia los floats internos */
-}
-
-/* Estilos para cada vehículo */
-.flotaContenedor .vehiculo {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-    float: left; /* Para que queden uno junto al otro */
-    background-color: #F5F5F5; /* Color de fondo del vehículo */
-}
-
-/* Estilos para las imágenes de los vehículos */
-.flotaContenedor .vehiculo .imagenContenedor img {
-    width: 100%;
-    height: 500px; /* Altura fija para las imágenes de los vehículos */
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-/* Estilos para el contenedor de la sección de trayectorias */
-.trayectoriaContenedor {
-    background-color: #FFC107; 
-    padding: 20px; /* Espaciado interior */
-    margin: 10px; /* Margen exterior */
-    margin-bottom: 20px; /* Margen inferior */
-    border-radius: 10px; /* Borde redondeado */
-}
-
-/* Estilos para el contenedor de la sección de garantías */
-.garantiasContenedor {
-    background-color: #FF5722;
-    margin: 10px; /* Margen exterior */
-    padding: 20px; /* Espaciado interior */
-    margin-bottom: 20px; /* Margen inferior */
-    border-radius: 10px; /* Borde redondeado */
-}
-
-/* Estilos para el contenedor de la sección de contacto */
 .contactoContenedor {
-    background-color: #03A9F4; 
-    margin: 10px; /* Margen exterior */
-    padding: 20px; /* Espaciado interior */
-    margin-bottom: 20px; /* Margen inferior */
-    border-radius: 10px; /* Borde redondeado */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("https://tradenews.com.ar/wp-content/uploads/2023/09/camion-ruta-Argentina-Imagen-Fadeeac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  clip-path: polygon(100% 0, 0 0%, 100% 10%, 100% 100%, 0 100%, 0 0);
+  overflow: visible;
+}
+.contactoContenedor .tituloSeccion {
+  font-size: 28px;
+  color: #fff;
+  margin-block-end: 2rem;
+  z-index: 10;
+}
+.contactoContenedor .formularioContacto, .contactoContenedor .formularios .formularioReclamo {
+  height: fit-content;
+  z-index: 10;
+  padding: 1.25rem;
+  display: grid; /* Cambiamos a grid */
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  grid-template-rows: repeat(2, auto); /* Dos filas */
+  border-radius: 0.5rem;
+  backdrop-filter: blur(20px); /* Aplicar un desenfoque de 5px al fondo al hacer hover */
+  gap: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.contactoContenedor .formularioContacto .formularioItem, .contactoContenedor .formularios .formularioReclamo .formularioItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contactoContenedor .formularioContacto .formularioItem label, .contactoContenedor .formularios .formularioReclamo .formularioItem label {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.contactoContenedor .formularioContacto .formularioItem input, .contactoContenedor .formularios .formularioReclamo .formularioItem input, .contactoContenedor .formularioContacto .formularioItem textarea, .contactoContenedor .formularios .formularioReclamo .formularioItem textarea {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); /* Aplicar un desenfoque de 5px al fondo al hacer hover */
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.contactoContenedor .formularioContacto .formularioItem input:focus, .contactoContenedor .formularios .formularioReclamo .formularioItem input:focus, .contactoContenedor .formularioContacto .formularioItem textarea:focus, .contactoContenedor .formularios .formularioReclamo .formularioItem textarea:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.contactoContenedor .formularioContacto .formularioItem:nth-last-child(3), .contactoContenedor .formularios .formularioReclamo .formularioItem:nth-last-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.contactoContenedor .formularioContacto button, .contactoContenedor .formularios .formularioReclamo button {
+  width: 100%;
+  height: 3rem;
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  grid-column: 1/span 2; /* Ocupa dos columnas */
+}
+.contactoContenedor .formularioContacto button:hover, .contactoContenedor .formularios .formularioReclamo button:hover {
+  background-color: #64B5F6;
+}
+.contactoContenedor .formularioContacto button:focus, .contactoContenedor .formularios .formularioReclamo button:focus {
+  background-color: #1E88E5;
+}
+.contactoContenedor::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  z-index: 1;
 }
 
-/* Estilos para los campos del formulario */
-.contactoContenedor input,
-.contactoContenedor textarea {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 10px; /* Espaciado interior */
-    margin-bottom: 10px; /* Margen inferior */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Borde redondeado */
-    box-shadow: none; /* Sin sombra */
-    outline: none; /* Sin contorno al enfocar */
+.vehiculosContenedor {
+  width: 100%;
+  height: 100vh;
+  padding-block-start: 4rem;
+  padding-inline: 2rem;
+}
+.vehiculosContenedor .vehiculo {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  margin-block: 2rem;
+  width: 100%;
+}
+.vehiculosContenedor .vehiculo .infoItem {
+  width: 100%;
+}
+.vehiculosContenedor .vehiculo .infoItem:nth-child(1) p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.vehiculosContenedor .vehiculo .infoItem:nth-child(2), .vehiculosContenedor .vehiculo .infoItem:nth-child(3) {
+  font-size: 16px;
+}
+.vehiculosContenedor .vehiculo .galeria {
+  width: 40rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
+.vehiculosContenedor .vehiculo .galeria .imagen img {
+  border-radius: 0.7rem;
+  object-fit: cover;
+}
+.vehiculosContenedor .vehiculo .galeria .imagen:nth-child(1) {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.vehiculosContenedor .vehiculo .galeria .imagen:nth-child(2), .vehiculosContenedor .vehiculo .galeria .imagen:nth-child(3) {
+  grid-row: span 1;
+  grid-column: span 1;
 }
 
-/* Estilos para el botón de enviar del formulario */
-.contactoContenedor button {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 10px; /* Espaciado interior */
-    background-color: #FFC107; 
-    color: #FFF; /* Color de texto blanco */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambia el cursor al pasar */
-    transition: background-color 0.3s; /* Transición suave de color de fondo */
+#principal .hero-extended .contenedor {
+  height: 20rem;
+  background-image: url("https://media.traveler.es/photos/635bfa3089708c1dafda9fa3/16:9/w_2560%2Cc_limit/2AMRHB9.jpg");
+}
+#principal .trayectoriaContenedor {
+  height: fit-content;
+}
+#principal .trayectoriaContenedor .trayectorias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+#principal .trayectoriaContenedor .trayectorias .itemTrayectoria {
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+}
+#principal .trayectoriaContenedor .trayectorias .itemTrayectoria:nth-child(1) {
+  grid-row: 1;
+  grid-column: 1;
+}
+#principal .trayectoriaContenedor .trayectorias .itemTrayectoria:nth-child(2) {
+  grid-row: 2;
+  grid-column: 1;
+}
+#principal .trayectoriaContenedor .trayectorias .itemTrayectoria:nth-child(3) {
+  grid-column: 2;
+  grid-row: span 2;
+  height: 26rem;
+  background-color: #111;
+}
+#principal .trayectoriaContenedor .trayectorias .itemTrayectoria:nth-child(3) .video {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonialesContenedor .testimoniales .testimonio {
+  width: 35rem;
+}
+.testimonialesContenedor .testimoniales .testimonio blockquote {
+  font-style: italic;
+  border-left: 5px solid #2196F3; /* Estilo de la línea izquierda */
+  padding-left: 10px; /* Espacio adicional a la izquierda del texto */
+}
+.testimonialesContenedor .testimoniales .testimonio blockquote::before {
+  content: "“"; /* Comillas de apertura */
+  color: #2196F3; /* Color azul para las comillas */
+  font-size: 2rem; /* Tamaño de fuente más grande para las comillas */
+}
+.testimonialesContenedor .testimoniales .testimonio blockquote q::after {
+  content: "”"; /* Comillas de cierre */
+  color: #2196F3; /* Color azul para las comillas */
+  font-size: 2rem; /* Tamaño de fuente más grande para las comillas */
+}
+.testimonialesContenedor .testimoniales .testimonio:hover blockquote {
+  border-left: 5px solid #fff; /* Estilo de la línea izquierda */
+}
+.testimonialesContenedor .testimoniales .testimonio:hover blockquote::before {
+  color: #fff; /* Color azul para las comillas */
+}
+.testimonialesContenedor .testimoniales .testimonio:hover blockquote q::after {
+  color: #fff; /* Color azul para las comillas */
+}
+
+#principal .faqsHero {
+  height: 14rem;
+  border-bottom: 0.2rem solid #64B5F6;
+  background-color: #2196F3;
+  padding-block-end: 1rem;
+}
+#principal .faqsHero .tituloSeccion {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  font-size: 2rem;
+  margin-inline-start: 2rem;
+}
+#principal .faqsContenedor {
+  padding: 2rem;
+}
+#principal .faqsContenedor .faqs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#principal .faqsContenedor .faqs .faq {
+  width: 100%;
+}
+
+.contactoContenedor {
+  clip-path: none;
+}
+.contactoContenedor .formularios {
+  display: flex;
 }
 .footerContenedor {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 40px; /* Espaciado interior */
-    position: relative; /* Permite el posicionamiento relativo de elementos internos */
-    overflow: hidden; /* Limpia los floats internos */
-    background-color: #212121; 
-    color: #fff;
+  height: 15rem;
+  padding-inline: 1rem 5rem;
+  padding-block: 2rem 2rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
-.footerContenedor .navLista a {
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-    color: #fff; 
+.footerContenedor .logoContenedor {
+  user-select: none;
 }
+.footerContenedor .logoContenedor .logoTitulo {
+  font-size: 16px;
+}
+.footerContenedor .logoContenedor .subtitulo {
+  font-size: 14px;
+}
+.footerContenedor .menus {
+  display: flex;
+  gap: 8rem;
+  height: 100%;
+}
+.footerContenedor .menus .menuItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.footerContenedor .menus .menuItem .titulo {
+  font-size: 22px;
+  font-weight: 300;
+  margin-block-end: 1rem;
+  color: #2196F3;
+}
+.footerContenedor .menus .menuItem .navbarContenedor .navLista li a {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=styles.css.map */

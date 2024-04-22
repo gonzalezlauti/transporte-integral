@@ -1,21 +1,13 @@
 {
-  "name": "trasporte-integral",
+  "name": "transporte-integral",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "npm eun tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gonzalezlauti/transporte-integral.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gonzalezlauti/transporte-integral/issues"
-  },
-  "homepage": "https://github.com/gonzalezlauti/transporte-integral#readme",
   "devDependencies": {
     "node": "^18.20.2"
   }
