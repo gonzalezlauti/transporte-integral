@@ -1,0 +1,11 @@
+.contactoContenedor {
+    clip-path: none;
+    .formularios {
+        display: flex;
+        .formularioReclamo {
+            @extend .form;
+
+        }
+    }
+
+}

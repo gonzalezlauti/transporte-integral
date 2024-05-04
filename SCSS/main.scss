@@ -1,0 +1,27 @@
+@import 'utilities/maps';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+
+@import 'base/typo';
+@import 'base/reset';
+@import 'utilities/global';
+
+
+
+@import 'components/forms';
+@import 'components/inputs';
+@import 'components/buttons';
+@import 'components/cards';
+
+@import 'layout/header';
+
+
+@import 'views/inicio';
+@import "views/flota";
+@import "views/nosotros";
+@import "views/faq";
+@import "views/contacto";
+@import 'layout/footer';
+
+@import 'utilities/media-queries';

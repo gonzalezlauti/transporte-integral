@@ -1,0 +1,31 @@
+.form {
+    height: fit-content;
+    z-index: 10;
+    padding: 1.25rem;
+    display: grid; /* Cambiamos a grid */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(2, auto); /* Dos filas */
+    border-radius: .5rem;
+    backdrop-filter: blur(20px); /* Aplicar un desenfoque de 5px al fondo al hacer hover */
+    gap: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        
+        label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        
+        &:nth-last-child(3) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+    }
+    
+   
+}

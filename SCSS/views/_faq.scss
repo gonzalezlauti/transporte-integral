@@ -1,0 +1,29 @@
+.faqsHero {
+    @extend .hero;
+    height: 14rem;
+    border-bottom: .2rem solid  map-get($map: $colors, $key: primary-hover);
+    background-color:  map-get($map: $colors, $key: primary);
+    padding-block-end: 1rem;
+    .tituloSeccion {
+        color:  map-get($map: $colors, $key: light);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-end;
+        font-size: 2rem;
+        margin-inline-start: 2rem;
+    }
+}
+.faqsContenedor {
+    padding: 2rem;
+    .faqs {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .faq {
+            width: 100%;
+        }
+    }
+
+}

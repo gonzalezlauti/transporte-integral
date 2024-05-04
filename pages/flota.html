@@ -7,36 +7,40 @@
         <meta name="description" content="Transporte Integral: líder nacional en logística de transporte. Más de 30 años de experiencia en rutas regionales y nacionalizadas. Eficiencia, puntualidad y atención al cliente. ¡Descubre nuestra historia de éxito hoy!">
         <link rel="canonical" href= "https://www.transporteintegral.com.ar/flota">
         <meta name="author" content="Transporte Integral">
-        <link rel="stylesheet" href="/CSS/styles.css">
+        <link rel="stylesheet" href="\node_modules\bootstrap\dist\css\bootstrap-grid.css">
+        <link rel="stylesheet" href="/CSS/main.css">
     </head>
     <body>
-        <header class="headerContenedor" id="header">
-            <div class="logoContenedor">
-                <h1 class="logoTitulo">Transporte Integral</h1> 
+        <header class="header" id="header">
+            <div class="container d-flex align-items-center justify-content-aroun">
+                <div class="logoContenedor">
+                    <h1 class="logoTitulo">Transporte Integral</h1> 
+                </div>
+                <nav class="navbarContenedor">
+                    <ul class="navLista">
+                        <li>
+                            <a href="/index.html" title="inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/Pages/flota.html" title="flota">Flota</a>
+                        </li>
+                        <li>
+                            <a href="/Pages/nosotros.html" title="nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#garantias" title="preguntas Frecuentes">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#contacto" title="contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navbarContenedor">
-                <ul class="navLista">
-                    <li>
-                        <a href="/index.html" title="inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/Pages/flota.html" title="flota">Flota</a>
-                    </li>
-                    <li>
-                        <a href="/Pages/nosotros.html" title="nosotros">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#garantias" title="preguntas Frecuentes">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#contacto" title="contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+            
         </header>
         <main>
             <section class="vehiculosContenedor">
-                <article class="vehiculo">
+                <article class="card-large">
                     <div class="ficheTecnica">
                         <div class="infoItem">
                             <p>
@@ -66,7 +70,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="vehiculo">
+                <article class="card-large">
                     <div class="ficheTecnica">
                         <div class="infoItem">
                             <p>
@@ -93,7 +97,7 @@
                     </div>
 
                 </article>
-                <article class="vehiculo">
+                <article class="card-large">
                     <div class="ficheTecnica">
                         <div class="infoItem">
                             <p>
@@ -120,5 +124,36 @@
                 </article>
             </section>
         </main>
+        <footer class="footer" id="footer">
+            <div class="logoContenedor">
+                <h3 class="logoTitulo">Transporte Integral</h3> 
+                <h2 class="subtitulo">Tu transporte de confianza</h2>  
+            </div>
+            <section class="menus">
+                <article class="menuItem">
+                    <p class="titulo">External</p>
+                    <nav class="navbarContenedor">
+                        <ul class="navLista">
+                            <li>
+                                <a href="#" title="inicio" >Inicio</a>
+                            </li>
+                            <li>
+                                <a href="/Pages/flota.html" title="flota">Flota</a>
+                            </li>
+                            <li>
+                                <a href="/Pages/nosotros.html" title="nosotros">Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#garantias" title="preguntas Frecuentes">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#contacto" title="contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </article>
+            </section>
+        </footer>
     </body>
+    
 </html>

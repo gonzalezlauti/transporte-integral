@@ -1,0 +1,97 @@
+.hero { 
+    width: 100%;
+    height: 100%;
+    padding-block-start: 3.3rem;
+    position: relative;
+    overflow: hidden;
+    .contenedor {
+        background-image: url($hero-image);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        width: 100vw;
+        height: 70vh;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .contenido{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            .titulo {
+                color:  map-get($map: $colors, $key: light);
+                font-size: 28px;
+            }
+            .subtitulo {
+                font-size: 24px;
+            }
+
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:  map-get($map: $colors, $key: dark);
+            opacity: .7;
+            z-index: 1;
+        }
+    }
+}   
+.serviciosContenedor {
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+
+    h3 {
+        font-size: 28px !important;
+    }
+    .servicios {
+    
+     
+       
+    
+        margin-block-start: 2rem;
+     
+        user-select: none;
+       
+    }
+}
+.contactoContenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("https://tradenews.com.ar/wp-content/uploads/2023/09/camion-ruta-Argentina-Imagen-Fadeeac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    clip-path: polygon(100% 0, 0 0%, 100% 10%, 100% 100%, 0 100%, 0 0);
+    overflow: visible;
+    .tituloSeccion {
+        font-size: 28px;
+        color:  map-get($map: $colors, $key: light);
+        margin-block-end: 2rem;
+        z-index: 10;
+    } 
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: .7;
+        z-index: 1;
+    }
+}

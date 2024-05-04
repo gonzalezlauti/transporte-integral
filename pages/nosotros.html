@@ -7,32 +7,36 @@
         <meta name="description" content="Transporte Integral: líder nacional en logística de transporte. Más de 30 años de experiencia en rutas regionales y nacionalizadas. Eficiencia, puntualidad y atención al cliente. ¡Descubre nuestra historia de éxito hoy!">
         <link rel="canonical" href= "https://www.transporteintegral.com.ar/nosotros">
         <meta name="author" content="Transporte Integral">
-        <link rel="stylesheet" href="/CSS/styles.css">
+        <link rel="stylesheet" href="\node_modules\bootstrap\dist\css\bootstrap.css">
+        <link rel="stylesheet" href="/CSS/main.css">
     </head>
     <body>
-        <header class="headerContenedor" id="header">
-            <div class="logoContenedor">
-                <h1 class="logoTitulo">Transporte Integral</h1> 
+        <header class="header" id="header">
+            <div class="container d-flex align-items-center justify-content-aroun"> 
+                <div class="logoContenedor">
+                    <h1 class="logoTitulo">Transporte Integral</h1> 
+                </div>
+                <nav class="navbarContenedor">
+                    <ul class="navLista">
+                        <li>
+                            <a href="/index.html" title="inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/Pages/flota.html" title="flota">Flota</a>
+                        </li>
+                        <li>
+                            <a href="#trayectoria" title="nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="/pages/faq.html" title="faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="/pages/contacto.html" title="contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navbarContenedor">
-                <ul class="navLista">
-                    <li>
-                        <a href="/index.html" title="inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/Pages/flota.html" title="flota">Flota</a>
-                    </li>
-                    <li>
-                        <a href="#trayectoria" title="nosotros">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="/pages/faq.html" title="faq">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#contacto" title="contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+           
         </header>
         <main id="principal">
             <section class="hero-extended">
@@ -44,20 +48,20 @@
                 </div>
             </section>
             <section id="trayectoriaContenedor" class="trayectoriaContenedor">
-                <div class="trayectorias">
-                    <article class="itemTrayectoria" id="trayectoria">
+                <div class="trayectorias container-fluid gap-4">
+                    <article class="card-medium" id="trayectoria">
                         <h4>Trayectoria</h4>
                         <p>
                             Con más de tres décadas de experiencia, la empresa Transporte Integral ha destacado en el sector de la logística de transporte. Desde sus inicios como empresa local hasta su expansión internacional, ha demostrado un compromiso con la calidad, la innovación y la sostenibilidad. Su reputación se fundamenta en la eficiencia operativa, la tecnología avanzada y el cumplimiento de altos estándares de seguridad y calidad. Transporte Integral se posiciona como un líder confiable y preparado para los desafíos futuros del transporte y la logística.
                         </p>
                     </article>
-                    <article class="itemTrayectoria" id="historia">
+                    <article class="card-medium" id="historia">
                         <h4>Historia</h4>
                         <p>
                             Hace más de tres décadas, Transporte Integral comenzó como un pequeño servicio de transporte local en una ciudad industrial. Con esfuerzo y visión, expandió sus operaciones, abarcando rutas regionales y nacionalizando sus servicios. La clave de su éxito fue su enfoque en la eficiencia, la puntualidad y la atención al cliente. En los años siguientes, Transporte Integral invirtió en tecnología avanzada para la gestión de flotas y seguimiento de envíos, lo que le permitió ofrecer un servicio más rápido y seguro. Esta apuesta por la innovación atrajo a clientes de diferentes sectores, desde la industria manufacturera hasta el comercio electrónico.Hoy en día, Transporte Integral se ha consolidado como un referente en la industria de la logística de transporte. Su historia de éxito se fundamenta en valores como la confiabilidad, la adaptabilidad y el compromiso con la excelencia en cada operación.
                         </p>
                     </article>
-                    <article class="itemTrayectoria" id="multimedia">
+                    <article class="card-medium" id="multimedia">
                         <video class="video" controls>
                             <source src="/assets/videos/WhatsApp Video 2024-04-22 at 15.40.01 (1).mp4" type="video/mp4">
                             Tu navegador no soporta el elemento de video.
@@ -65,26 +69,26 @@
                     </article>
                 </div>
             </section>
-            <section class="testimonialesContenedor" id="testimoniales">
+            <section class="testimonialesContenedor d-flex flex-column align-items-center" id="testimoniales">
                 <h3>Testimoniales</h3>
                 <p>Algunos relatos de nuestros clientes</p>
-                <div class="testimoniales">
-                    <article class="testimonio">
+                <div class="testimoniales row gap-4 align-items-center justify-content-center">
+                    <article class="card-xl">
                         <blockquote>
                             <q>Increíble experiencia con su servicio de logística. Mis entregas siempre a tiempo y en perfecto estado. ¡Altamente recomendado!</q>
                         </blockquote>
                     </article>
-                    <article class="testimonio">
+                    <article class="card-xl">
                         <blockquote>
                             <q>La eficiencia de su empresa de transporte es impresionante. Mis productos llegaron intactos y antes de lo esperado. ¡Gracias por todo!</q>
                         </blockquote>
                     </article>
-                    <article class="testimonio">
+                    <article class="card-xl">
                         <blockquote>
                             <q>Gracias a su logística impecable, hemos optimizado nuestras operaciones y mejorado la satisfacción del cliente. ¡Excelente servicio!</q>
                         </blockquote>
                     </article>
-                    <article class="testimonio">
+                    <article class="card-xl">
                         <blockquote>
                             <q>La empresa de transporte ha sido clave en nuestra cadena de suministro. Entregas puntuales y eficientes. ¡Muy recomendados para negocios!</q>
                         </blockquote>
@@ -93,7 +97,7 @@
             </section>
                 
         </main>
-        <footer class="footerContenedor" id="footer">
+        <footer class="footer" id="footer">
             <div class="logoContenedor">
                 <p class="logoTitulo">Transporte Integral</p> 
                 <h2 class="subtitulo">Tu transporte de confianza</h2>  

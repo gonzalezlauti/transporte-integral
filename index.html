@@ -8,34 +8,38 @@
         <link rel="canonical" href= "https://www.transporteintegral.com.ar/principal">
         <link rel="robots" href="https://www.transporteintegral.com.ar/robots.txt">
         <meta name="author" content="Transporte Integral">
-        <link rel="stylesheet" href="./CSS/styles.css">
+        <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+        <link rel="stylesheet" href="./CSS/main.css">
         <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/thumbnails/004/581/260/small/truck-delivery-icon-transportation-automotive-shipping-moving-and-freight-illustration-design-free-vector.jpg" type="image/x-icon">
     </head>
     <body>
 
-        <header class="headerContenedor" id="header">
-            <div class="logoContenedor">
-                <h1 class="logoTitulo">Transporte Integral</h1> 
+        <header class="header bg-light" id="header">
+            <div class="container d-flex align-items-center justify-content-aroun">
+                <div class="logoContenedor">
+                    <h1 class="logoTitulo">Transporte Integral</h1> 
+                </div>
+                <nav class="navbarContenedor">
+                    <ul class="navLista">
+                        <li>
+                            <a href="#" title="inicio" >Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/Pages/flota.html" title="flota">Flota</a>
+                        </li>
+                        <li>
+                            <a href="/Pages/nosotros.html" title="nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#garantias" title="preguntas Frecuentes">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#contacto" title="contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navbarContenedor">
-                <ul class="navLista">
-                    <li>
-                        <a href="#" title="inicio" >Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/Pages/flota.html" title="flota">Flota</a>
-                    </li>
-                    <li>
-                        <a href="/Pages/nosotros.html" title="nosotros">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#garantias" title="preguntas Frecuentes">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#contacto" title="contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+           
         </header>
         <main id="principal"> 
             <section class="hero">
@@ -49,74 +53,79 @@
                     </div>
                 </div>
             </section>
-            <section class="serviciosContenedor" id="servicios">
+            <section class="serviciosContenedor d-flex flex-column align-items-center justify-content-center" id="servicios">
                 <h3>Nuestros Servicios</h3>
                 <p>Ofrecemos una amplia cartera de servicios para brindar una atención personalizada a individuos y compañias</p>
-                <div class="servicios">
-                    <article class="servicio">
-                        <h4>Mudanzas</h4>
-                        <p>
-                            ¡Confía en nosotros para tu mudanza! Servicio de transporte seguro y eficiente. Contáctanos hoy mismo.
-                        </p>
+                <div class="servicios container d-flex flex-column align-items-center gap-4">
+                    <div class="row gap-4 row-cols-12- row-cols-xl-4 d-flex justify-content-center">
+                        <article class="card">
+                            <h4>Mudanzas</h4>
+                            <p>
+                                ¡Confía en nosotros para tu mudanza! Servicio de transporte seguro y eficiente. Contáctanos hoy mismo.
+                            </p>
+    
+                        </article>
+                        <article class="card">
+                            <h4>Logistica</h4>
+    
+                            <p>
+                                Optimiza tu logística con nosotros. Soluciones de transporte confiables y eficientes para tu empresa. Contáctanos ya.
+                            </p>
+    
+                        </article>
+                        <article class="card">
+                            <h4>Seguimiento</h4>
+                            <p>
+                                Controla tus envíos en tiempo real. Nuestro servicio de seguimiento te ofrece tranquilidad y confianza. ¡Contáctanos hoy
+                            </p>
+                        </article>
+                    </div> 
+                    <div class="row gap-4 row-cols-12- row-cols-xl-4 d-flex justify-content-center">
+                        <article class="card">
+                            <h4>Cobertura</h4>
 
-                    </article>
-                    <article class="servicio">
-                        <h4>Logistica</h4>
+                            <p>
+                                Amplia cobertura nacional e internacional. Tu carga siempre protegida con nuestra empresa de transporte. ¡Contáctanos ahora!
+                            </p>
 
-                        <p>
-                            Optimiza tu logística con nosotros. Soluciones de transporte confiables y eficientes para tu empresa. Contáctanos ya.
-                        </p>
+                        </article>
+                        <article class="card">
+                            <h4>Depósitos</h4>
 
-                    </article>
-                    <article class="servicio">
-                        <h4>Seguimiento</h4>
-                        <p>
-                            Controla tus envíos en tiempo real. Nuestro servicio de seguimiento te ofrece tranquilidad y confianza. ¡Contáctanos hoy
-                        </p>
+                            <p>
+                                Guardamos tus bienes de forma segura. Servicio de depósito confiable para tus necesidades de almacenamiento. ¡Contáctanos hoy mismo!
+                            </p>
 
-                    </article>
-                    <article class="servicio">
-                        <h4>Cobertura</h4>
+                        </article>
+                        <article class="card">
+                            <h4>Encomiendas</h4>
 
-                        <p>
-                            Amplia cobertura nacional e internacional. Tu carga siempre protegida con nuestra empresa de transporte. ¡Contáctanos ahora!
-                        </p>
+                            <p>
+                                Enviamos tus encomiendas con rapidez y seguridad. Confía en nuestro servicio de transporte para entregas confiables. Contáctanos ya
+                            </p>
 
-                    </article>
-                    <article class="servicio">
-                        <h4>Depósitos</h4>
+                        </article>
+                    </div>
+                   
 
-                        <p>
-                            Guardamos tus bienes de forma segura. Servicio de depósito confiable para tus necesidades de almacenamiento. ¡Contáctanos hoy mismo!
-                        </p>
-
-                    </article>
-                    <article class="servicio">
-                        <h4>Encomiendas</h4>
-
-                        <p>
-                            Enviamos tus encomiendas con rapidez y seguridad. Confía en nuestro servicio de transporte para entregas confiables. Contáctanos ya
-                        </p>
-
-                    </article>
                 </div>
             </section>
             <section id="contacto" class="contactoContenedor">
                 <h3 class="tituloSeccion">Contacto</h3>
-                <form action="" class="formularioContacto">
-                    <div class="formularioItem">
+                <form action="" class="form">
+                    <div class="form-item">
                         <label for="nombreApellido">Nombre y apellido</label>  
                         <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Ingrese su nombre y apellido" required>                   
                     </div>
-                    <div class="formularioItem">
+                    <div class="form-item">
                         <label for="email">Correo electronico</label>
                         <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
                     </div>
-                    <div class="formularioItem">
+                    <div class="form-item">
                         <label for="Telefono">Telefono</label>
                         <input type="number" name="Telefono" id="Telefono" placeholder="ingrese su numero de Telefono">
                     </div>
-                    <div class="formularioItem"> 
+                    <div class="form-item"> 
                         <label for="mensaje">Mensaje</label>
                         <textarea name="Mensaje" id="mensaje" cols="30" rows="5" required>Tu mensaje</textarea>
                     </div>
@@ -124,7 +133,7 @@
                 </form>
             </section>
         </main>
-        <footer class="footerContenedor" id="footer">
+        <footer class="footer" id="footer">
             <div class="logoContenedor">
                 <h3 class="logoTitulo">Transporte Integral</h3> 
                 <h2 class="subtitulo">Tu transporte de confianza</h2>  

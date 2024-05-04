@@ -1,0 +1,25 @@
+.hero-extended {
+    @extend .hero;
+    .contenedor {
+        height: 20rem;
+        background-image: url($hero-nosotros-imagen);
+
+    }
+}
+.trayectoriaContenedor {
+    @extend .serviciosContenedor;
+    height: fit-content;
+    .trayectorias {
+        @extend .servicios;
+        display: grid;
+        grid-template-columns: 1fr 1fr; // Dos columnas de igual tamaño
+        grid-template-rows: auto; // Altura automática según el contenido
+    }
+}
+.testimonialesContenedor {
+    @extend .serviciosContenedor;
+    height: 100%;
+    .testimoniales {
+        @extend .servicios;       
+    }
+}
