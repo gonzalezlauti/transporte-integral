@@ -1,11 +1,30 @@
-.contactoContenedor {
+.contactosContenedor {
+    @extend .contactoContenedor;
     clip-path: none;
-    .formularios {
-        display: flex;
-        .formularioReclamo {
-            @extend .form;
+    .contact-items{
+        .cards{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .card{
+                backdrop-filter: blur(20px);
+                .icon{
+                    width: fit-content;
+                    img{
+                        width: 5rem;
+                        border-radius: 1rem;
+                    }
 
+                }
+                .content{
+                    p{
+                        font-size: 15px;
+                        color: map-get($map: $colors, $key:light );
+                    }
+                }
+            }
         }
+        z-index: 10;
     }
 
 }
