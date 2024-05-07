@@ -3,12 +3,9 @@
     position: fixed;
     padding: 1rem;
     background-color:  map-get($map: $colors, $key: light);
-
     z-index: 100;
     .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        
         .logoContenedor {
             display: flex;
             .logoTitulo {

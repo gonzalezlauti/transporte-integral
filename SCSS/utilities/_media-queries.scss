@@ -1,0 +1,79 @@
+@media (max-width: 900px) {
+    .header {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;    
+        }
+    }
+}
+
+
+@media (max-width: 1240px) {
+    .header {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+    }
+}
+
+@media (min-width: 1240px) {
+    .header {
+        display: flex;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+    }
+    .serviciosContenedor {
+        height: 100vh;
+    }
+
+    .contactoContenedor {
+        height: 100vh;
+    }
+    .form {
+        width: fit-content;
+        display: grid; /* Cambiamos a grid */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        grid-template-rows: repeat(2, auto); /* Dos filas */
+        backdrop-filter: blur(20px); /* Aplicar un desenfoque de 5px al fondo al hacer hover */
+    }
+    .card-large{
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .galeria{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-auto-rows: auto;
+        }
+    }
+    .trayectoriaContenedor{
+        .trayectorias{
+            display: grid;
+            grid-template-columns: 1fr 1fr; // Dos columnas de igual tamaño
+            grid-template-rows: auto; // Altura automática según el contenido
+        }
+        }
+    .contactosContenedor{
+        .contact-items{
+            flex-direction: row;
+            .cards{
+                width: fit-content;
+            }
+        }
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+}

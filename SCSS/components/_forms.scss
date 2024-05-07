@@ -1,10 +1,10 @@
 .form {
+    width: 100%;
     height: fit-content;
     z-index: 10;
     padding: 1.25rem;
-    display: grid; /* Cambiamos a grid */
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    grid-template-rows: repeat(2, auto); /* Dos filas */
+    display: flex;
+    flex-direction: column;
     border-radius: .5rem;
     backdrop-filter: blur(20px); /* Aplicar un desenfoque de 5px al fondo al hacer hover */
     gap: 1rem;
